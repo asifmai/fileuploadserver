@@ -1,0 +1,20 @@
+extends layout
+
+block customhead
+  //- link(rel="stylesheet", href="/js/custom.js")
+
+block content
+  form(action="/", method="POST", enctype="multipart/form-data") 
+    .container 
+      .row.mt-5
+        .col.text-center
+          h2 Upload File to Server
+      .row.my-4 
+        .col-lg-6.mx-auto 
+          input#file.form-control(type="file", name="file", required)
+      .row 
+        .col-lg-6.mx-auto
+          button(type="submit").btn.btn-primary.btn-block Upload
+
+block customscripts
+  //- script(src="/js/custom.js")

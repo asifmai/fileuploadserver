@@ -1,0 +1,21 @@
+extends layout
+
+block customhead
+  //- link(rel="stylesheet", href="/js/custom.js")
+
+block content
+  .container 
+    .row.mt-5
+      .col.text-center
+        h2 File Uploaded Successfully
+    .row.my-4 
+      .col-lg-12.mx-auto.text-center
+        p Url of Uploaded File: 
+        p
+          a.text-success(href=fileUrl)=Click to Access File
+    .row 
+      .col-lg-6.mx-auto
+        a.btn.btn-primary.btn-block(href="/") Upload Another
+
+block customscripts
+  //- script(src="/js/custom.js")
